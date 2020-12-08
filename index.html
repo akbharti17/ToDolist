@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>To do List</title>
+	<style>
+		.container{
+			width: 50%;
+			height: 200px;
+			margin: 0 auto;
+			margin-top: 50px;
+			text-align: center;
+			font-size: 20px;
+		}
+		h1{
+			text-align: center;
+		}
+		ul{
+			display: inline-block; 
+	        text-align: left; 
+		}
+		#task{
+			padding: 20px;
+			width: 260px;
+			margin-bottom: 10px;
+			border: none;
+			box-shadow:inset 0 0 2px 2px #888;
+		}
+		.tasklist{
+			text-align: center;
+			width: 100%;
+		}
+		.uncompdiv{
+			width: 50%;
+			float: left;
+		}
+		.compdiv{
+			width: 50%;
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Enter the Task</h2>
+		<p><input type="text" id="task"></p>
+		<p><input type="button"  id="addButton" value="Add Task"></p>
+	</div>
+	<div class="tasklist">
+		<div class="uncompdiv">
+			<h1>To do lists</h1>
+			<ul id="incomp"></ul>
+		</div>
+		<div class="compdiv">
+			<h1>Completed List</h1>
+			<ul id="comp"></ul>
+		</div>
+	</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script  src="script.js"></script>
+</body>
+</html>
